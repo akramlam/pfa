@@ -5,7 +5,7 @@ const registerButton = document.getElementById('register-btn');
 // Add click event listener
 registerButton.addEventListener('click', () => {
     // Redirect to the login page
-    window.location.href = 'login.html';
+    window.location.href = '../auth/login.html';
 });
 
 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            padding-top: 1rem;
+        }
+        .sidebar a {
+            color: #ffffff;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 1rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .header .search-bar {
+            max-width: 400px;
+        }
+        .content {
+            padding: 1rem;
+        }
+        .card {
+            margin-bottom: 1rem;
+        }
+        .quick-actions .btn {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <div class="sidebar p-3">
+            <h4 class="text-white">Company Logo</h4>
+            <a href="#">Home</a>
+            <a href="#">My Requests</a>
+            <a href="#">New Request</a>
+            <a href="#">HR Communications</a>
+            <a href="#">Departments</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="flex-grow-1">
+            <div class="header d-flex justify-content-between align-items-center">
+                <div class="search-bar">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <div>
+                    <button class="btn btn-outline-secondary">Notifications</button>
+                    <button class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Profile</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Welcome, [User Name]!</h2>
+                <div class="quick-actions mb-4">
+                    <button class="btn btn-primary">New Vacation Request</button>
+                    <button class="btn btn-secondary">New HR Communication</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Pending Requests</h5>
+                                <p class="card-text">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-success">
+                            <div class="card-body">
+                                <h5 class="card-title">Approved Requests</h5>
+                                <p class="card-text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-danger">
+                            <div class="card-body">
+                                <h5 class="card-title">Rejected Requests</h5>
+                                <p class="card-text">1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-warning">
+                            <div class="card-body">
+                                <h5 class="card-title">Upcoming Vacations</h5>
+                                <p class="card-text">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Recent Communications</h5>
+                                <p class="card-text">Last communication: 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

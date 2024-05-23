@@ -44,3 +44,15 @@ h2 {
 #register-form button:hover {
     background-color: #0056b3;
 }
+
+#register-form register-btn {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+#register-btn p {
+    margin: 0;
+}

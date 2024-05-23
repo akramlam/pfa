@@ -3,7 +3,7 @@
   "productName": "test-ele",
   "version": "1.0.0",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -27,6 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.1608.0",
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "node-fetch": "^3.3.2"
   }
 }
